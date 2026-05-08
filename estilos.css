@@ -1,0 +1,402 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#F8F4EF;
+    font-family:'Poppins', sans-serif;
+}
+
+/* MENÚ */
+
+nav{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#F8F4EF;
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:28px;
+    color:#6B4E71;
+    font-weight:bold;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#4B3B47;
+    margin-left:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#B497BD;
+}
+
+/* BANNER */
+
+.banner{
+    width:100%;
+    height:100vh;
+
+    background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1600');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+}
+
+.contenido-banner{
+    position:relative;
+    text-align:center;
+    color:white;
+    z-index:2;
+}
+
+.contenido-banner h1{
+    font-family:'Playfair Display', serif;
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.contenido-banner p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    background-color:#B497BD;
+    color:white;
+    font-size:16px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:#9D7AA8;
+
+
+}
+
+/* HOME CARDS */
+
+.cards-home {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    padding: 100px 8%;
+
+    background-color: #F8F4EF;
+}
+
+.card-home {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.4s;
+}
+
+.card-home:hover {
+    transform: translateY(-10px);
+}
+
+.card-home h2 {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #7B5B84;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 35px;
+}
+
+.card-home p {
+    text-align: justify;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+/* ======================= */
+/* SERVICIOS */
+/* ======================= */
+
+.titulo-servicios{
+
+    padding-top:180px;
+
+    text-align:center;
+
+    padding-left:8%;
+    padding-right:8%;
+}
+
+.titulo-servicios h1{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:60px;
+
+    color:#6B4E71;
+
+    margin-bottom:20px;
+}
+
+.titulo-servicios p{
+
+    color:#666;
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+
+/* CARDS */
+
+.servicios{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+
+.servicio-card{
+
+    width:360px;
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+}
+
+
+.servicio-card:hover{
+
+    transform:translateY(-12px);
+}
+
+
+.servicio-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+}
+
+
+.contenido-servicio{
+
+    padding:30px;
+}
+
+
+.contenido-servicio h2{
+
+    font-family:'Playfair Display', serif;
+
+    color:#7B5B84;
+
+    margin-bottom:15px;
+
+    font-size:32px;
+}
+
+
+.contenido-servicio p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    text-align:justify;
+}
+
+/* ======================= */
+/* CONTACTO */
+/* ======================= */
+
+.contacto{
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:180px 8% 100px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+    background-color:#F8F4EF;
+}
+
+
+/* TEXTO */
+
+.info-contacto{
+
+    max-width:500px;
+}
+
+
+.info-contacto h1{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:65px;
+
+    color:#6B4E71;
+
+    margin-bottom:25px;
+}
+
+
+.info-contacto p{
+
+    color:#555;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    text-align:justify;
+}
+
+
+/* FORMULARIO */
+
+.formulario{
+
+    width:450px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+
+.formulario input,
+.formulario textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    background:#F3F3F3;
+
+    border-radius:15px;
+
+    font-size:15px;
+
+    font-family:'Poppins', sans-serif;
+}
+
+
+.formulario textarea{
+
+    height:160px;
+
+    resize:none;
+}
+
+
+.formulario button{
+
+    background:#B497BD;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+
+.formulario button:hover{
+
+    background:#9D7AA8;
+}
